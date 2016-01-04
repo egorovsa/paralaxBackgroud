@@ -1,19 +1,19 @@
 /*
-*    ParalaxBackground v1.0
-*    egorovsa2@gmail.com
-*
-*    For install:
-*
-*     create block.It most has fixed height and background.
-*    //HTML
-*    <div style="width:100%; height:500px; background: url(/bgpath/bg.jpg);"></div>  
-*
-*    //JS  
-*    jQuery('paralaxBlock').paralaxBackground({
-*        coefficient: 0.2,
-*        beginTop: -280
-*    });
-*/
+ *    ParalaxBackground v1.0
+ *    egorovsa2@gmail.com
+ *
+ *    For install:
+ *
+ *     create block.It most has fixed height and background.
+ *    //HTML
+ *    <div style="width:100%; height:500px; background: url(/bgpath/bg.jpg);"></div>
+ *
+ *    //JS
+ *    jQuery('paralaxBlock').paralaxBackground({
+ *        coefficient: 0.2,
+ *        beginTop: -280
+ *    });
+ */
 (function ($) {
     var methods = {
         init: function (options) {
@@ -47,7 +47,7 @@
 
             jQuery(window).scroll(function () {
                 var scrTop = jQuery(this).scrollTop();
-                self.actionScroll($this, scrTop)
+                self.actionScroll($this, scrTop);
             });
         },
         actionScroll: function ($this, scrTop) {
